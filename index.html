@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jim's page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a520937060.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <!-- Feature -->
+  <section class="personalCard">
+    <div class="content content-one">
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <div class="circle"></div>
+          <img src="/assets/person.svg" alt="person">
+        </div>
+        <div class="info">
+          <h1 class="title">Hey, I'm Jim &#128075</h1>
+          <h3>say hello or check out my work below &#128071 </h3>
+
+        </div>
+      </div>
+    </div>
+    <script src="js/card-animation.js"></script>
+    <!-- Feature -->
+    
+    <div class="links">
+      <div class="social-buttons">
+        <a href="https://github.com/JamesSafford" target=”_blank” style="text-decoration:none"> 
+          <div class="social-card">
+            <img class="social-card-image" src="/assets/github.svg" alt="github" >
+            <h3>See my work on GitHub</h3>
+          </div>
+        </a>
+        <a href="mailto:jamesfsafford@gmail.com" target=”_blank” style="text-decoration:none";> 
+          <div class="social-card">
+            <img class="social-card-image" src="/assets/email.svg" alt="email">
+            <h3>Drop me an email</h3>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/james-safford/" target=”_blank” style="text-decoration:none"> 
+          <div class="social-card">
+            <img class="social-card-image" src="/assets/linkedin.svg" alt="linkedin">
+            <h3>Say hello on LinkedIn</h3>
+          </div>
+        </a>
+        <a href="https://twitter.com/Jim_Safford" target=”_blank” style="text-decoration:none"> 
+          <div class="social-card">
+            <img class="social-card-image" src="/assets/twitter.svg" alt="twitter">
+            <h3>Follow me on Twitter</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project gallery -->
+  <section class="experience">
+    <div class="content column">
+    <h1 class="title">Here's a snapshot of my previous experiences</h1>
+  <div class="work">
+    <div class="caseStudy">
+      <div class="studyImage" style="background-image:url(/assets/address-history.png);"></div>
+      <div class="studyInfo">
+        <img class="logo" src="/assets/Habito.png" alt="Habito">
+        <h4>Reducing keying errors </h4>
+        <p>Preventing keying errors in mortgage applications by redesigning the submission process.</p>
+      </div>
+      <div class="studyFooter">
+          <p>Product Manager</p>
+          <button class="button open-button">tell me more</button>      
+          <dialog class="modal">
+            <p>Managing cases between recommendation and submission is not easy. Our Mortgage Experts aren’t told when a case is ready to submit, they need to work it out for themselves.
+              <br>
+              We needed to clean up the process, in order to make it easier for Mortgage Experts to manage cases, reduce the number of keying errors and ensure Mortgage Admins have easy access to the information they need to key a case.
+            </p>
+            <button class="button close-button">take me back</button>
+          </dialog>
+      </div>
+    </div>
+
+    <div class="caseStudy">
+      <div class="studyImage"style="background-image:url(/assets/controls.png);"></div>
+      <div class="studyInfo">
+        <img class="logo" src="/assets/Habito.png" alt="Habito">
+        <h4>Scalable task management </h4>
+        <p>Building a scalable task management tool for operational efficiency in the mortgage application process.</p>
+      </div>
+      <div class="studyFooter">
+          <p>Product Manager</p>
+          <button class="button open-button">tell me more</button>      
+          <dialog  class="modal">
+            <p>Working closely with Engineers, Case Managers and a Product Designer I proposed a new approach to for our team to manage their daily tasks. We’d move from reminders that they manually set themselves, to specific actions, bespoke information for relevant tasks and contextual actions. Tasks should now either be completed on not completed based on what the Case Manager is able to do, we can use this information to better understand where a case is, tailor the Case Manager and Customer flow to this and improve our data.
+                <br>
+              We’ve designed and delivered these for monitoring property surveys first and will be looking to expand the new system across the rest of the business.</p>
+            <button class="button close-button">take me back</button>
+          </dialog>
+      </div>
+  </div>
+
+  <div class="caseStudy">
+    <div class="studyImage"style="background-image:url(/assets/flavourite-landingpage.png);"></div>
+    <div class="studyInfo">
+      <img class="logo" src="/assets/Flavourite.png" alt="Flavourite">
+      <h4>Making recipes smarter </h4>
+      <p>Aggregating menus from the best restaurants, splitting them out by ingredient and making them searchable.</p>
+    </div>
+    <div class="studyFooter">
+        <p>Developer</p>
+        <button class="button open-button">tell me more</button>      
+        <dialog class="modal" id="modal2">
+          <p>Primarily a good opportunity to build and deploy something cool in React and Firebase, Flavourite solved a very specific problem for chefs: how do I use up some of the stuff I have left over from previous dishes, what would other chefs do with this ingredient?
+            <br>
+            Using a searchable database of recipes, and splitting the contents of which out to individual items, I could then show menus that other chefs had put together, which provided inspiration for a chef’s next dish. 
+            </p>
+          <button class="button close-button">take me back</button>
+        </dialog>
+    </div>
+</div>
+
+  <div class="caseStudy">
+    <div class="studyImage"style="background-image:url(/assets/Leelo-screen1.png);"></div>
+    <div class="studyInfo">
+      <img class="logo" src="/assets/Leelo.png" alt="Leelo">
+      <h4>Building a charity app </h4>
+      <p>Making climate donations work for both the charity and the donor.</p>
+    </div>
+    <div class="studyFooter">
+        <p>Co-founder</p>
+        <button class="button open-button">tell me more</button>      
+        <dialog class="modal" id="modal3">
+          <p>Myself and co-founders wanted to work on a React Native project that would have – at its heart – an ethical focus. Leelo was designed – partly as a payment infrastructure play and partly an analytics platform – to connect donors to the charitable causes they care for, and demonstrate down to the final penny what their donations were being used for.
+            <br>
+            We spoke to countless people about their experiences of donating to charity, and then presented a business case for large charities to be involved in the project. Hopefully you can see from the image what that experience looked and felt like!
+            </p>
+          <button class="button close-button">take me back</button>
+        </dialog>
+    </div>
+  </div>
+
+  <div class="caseStudy">
+    <div class="studyImage"style="background-image:url(/assets/pool.png);">
+    </div>
+      <div class="studyInfo">
+        <img class="logo" src="/assets/11FS.png" alt="11:FS">
+        <h4>Userpool: a pool of user testers! </h4>
+        <p>Led the building of a scalable content machine for 11:FS's UX research platform, Pulse.</p>
+      </div>
+      <div class="studyFooter">
+        <p>Product Manager</p>
+        <button class="button open-button">tell me more</button>      
+          <dialog class="modal " id="modal4">
+            <p>
+              At 11:FS I had a problem: I was using user testing sites like Respondent and UserTesting.com to purchase screen recordings of finance and banking apps to be used on our UX research platform – Pulse. I needed to find an easier way of getting hold of this content, and at a cheaper price (the service fees for the sites were astronomical).
+              <br>
+              So I persuaded the business to let me build a platform around our current panel of testers (built up over a year), and then used this to advertise for content we needed, alongside a price we would then pay them. We built this in six months and white-labelled to two UK banks for all their user testing needs.
+              </p>
+            <button class="button close-button">take me back</button>
+          </dialog>
+      </div>
+  </div>
+  <script src="js/experience-modal.js"></script>
+</div>
+  <!-- Project gallery -->
+</div>
+</section>
+
+<section>
+  <div class="content">
+  <!-- About me, Why development?, Showcase what you’ve learnt so far-->
+<div class="carousel">
+  <button class="carousel__button carousel__button--left is-hidden">
+    <img src="/assets/left.svg" alt="">
+  </button>
+  
+<div class="carousel__track-container">
+<ul class="carousel__track">
+  <li class="carousel__slide current-slide ">
+    <img class="carousel__copy" src="/assets/Me.png">
+  </li>
+  <li class="carousel__slide">
+    <img class="carousel__copy" src="/assets/Why_.png">
+  </li>
+  <div class="carousel__slide">
+    <img class="carousel__copy" src="/assets/Learnt.png">
+  </div>
+</ul>
+</div>
+<button class="carousel__button carousel__button--right">
+  <img src="/assets/right.svg" alt="">
+</button>
+  <div class="carousel__nav">
+    <button class="carousel__indicator current-slide"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+  </div>
+</div>
+<script src="js/carousel.js"></script>  
+<!-- About me, Why development?, Showcase what you’ve learnt so far-->
+</div>
+</section>
+
+</body>
+<footer>
+<h3 class="footer-header">Projects for submission</h3>
+<li>
+  <a href="https://jamessafford.github.io/F-C1/" target=”_blank”>Tribute page (project 1)</a>
+</li>
+<li>
+  <a href="https://jamessafford.github.io/carousel/" target=”_blank”>Carousel (project 2)</a>
+</li>
+<li>
+  <a href="https://jamessafford.github.io/commentbox/" target=”_blank”>The comment box (project 3)</a>
+</li>
+<li>
+  <a href="https://jamessafford.github.io/fruitstore/" target=”_blank”>The fruit shop (project 4)</a>
+</li>
+<li>
+  <a href="https://jamessafford.github.io/card-animation/" target=”_blank”>My card animation (project 6)</a>
+</li>
+</footer>
+
+</html>

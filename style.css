@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 1000;
+  background-size: auto;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Manrope', sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content-one {
+    flex-direction: column;
+  }
+}
+
+.personalCard {
+  perspective: 1000px;
+}
+
+.container {
+  width: 50%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  transform-style: preserve-3d;
+  height: 600px;
+  width: 35rem;
+  border-radius: 8px;
+  padding: 0rem 5rem;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  transition: all 0.75s ease-out;
+}
+
+h3 {
+  font-size: 1.3rem;
+  padding: 1.5rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  text-align: center;
+  transition: all 0.75s ease-out;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-card {
+  border-radius: 8px;
+  /* padding: 0rem 5rem; */
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  margin: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.social-card img {
+  width: auto;
+  /*width of your image*/
+  height: 50px;
+  /*height of your image*/
+  margin: 0;
+  /* If you want no margin */
+  padding: 10px;
+  /*if your want to padding */
+}
+
+.social-card a {
+  text-decoration: none;
+}
+
+
+.social-card h3 {
+  padding: 20px;
+}
+
+.links {
+  width: 50%;
+}
+
+/* Case studies */
+
+button {
+  cursor: pointer;
+}
+
+section.experience {
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
+}
+
+@media only screen and (max-width: 800px) {
+  section.experience {
+    padding: 0 0 0px 0;
+  }
+}
+
+section.experience div.work {
+  width: 1300px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 1150px) {
+  section.experience div.work {
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.experience div.work {
+    max-width: 80vw;
+    margin: 50px 0 0 0;
+    padding: 5vh 0 0 0;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+
+section.experience div.caseStudy {
+  width: 488px;
+  margin: 0 0 32px 0;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+}
+
+section.experience div.caseStudy div.studyImage {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: top;
+  border-radius: 8px;
+}
+
+section.experience div.caseStudy h4 {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+section.experience div.caseStudy p {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  line-height: 150%;
+  text-align: left;
+}
+
+section.experience div.caseStudy p.meta {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 18px 0 4px 0;
+  /* identical to box height */
+}
+
+section.experience div.caseStudy a {
+  text-decoration: none;
+  color: #828282;
+  position: relative;
+  font-family: "Space Mono", monospace;
+}
+
+section.experience div.caseStudy .studyInfo {
+  margin: 0 0 48px 0;
+}
+
+section.experience div.caseStudy .logo {
+  padding-top: 20px;
+  height: 35px;
+}
+
+section.experience div.caseStudy .studyFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* modal behaviour */
+
+.modal {
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 8px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+  border: none;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
+.modal::backdrop {
+  background: grey;
+  opacity: 0.4;
+}
+
+.open-button {
+  background-color: rgba(8, 83, 156, 0.75);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 15px
+}
+
+.close-button {
+  background-color: rgba(8, 83, 156, 0.75);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 15px
+}
+
+
+@media only screen and (max-width: 1150px) {
+  section.experience div.caseStudy {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.experience div.caseStudy {
+    margin: 0 0 60px 0;
+  }
+
+  section.experience div.caseStudy div.studyImage {
+    height: 240px;
+  }
+
+  section.experience div.caseStudy div.studyFooter {
+    flex-direction: column;
+  }
+
+  section.experience div.caseStudy div.studyFooter p {
+    margin: 0;
+  }
+}
+
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel__copy {
+  width: auto;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .carousel__copy {
+    width: auto;
+    height: 75%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .carousel {
+    display: none;
+  }
+}
+
+.carousel__track-container {
+  padding: 10px;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
+  border-radius: 8px;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button img {
+  width: 50px;
+}
+
+.carousel__button--left {
+  left: -40px;
+}
+
+.carousel__button--right {
+  right: -40px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* footer */
+.footer-header {
+  padding: 5px 15px;
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+  text-align: left;
+}
